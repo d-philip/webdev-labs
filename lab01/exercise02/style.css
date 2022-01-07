@@ -10,15 +10,44 @@ body {
 Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
+main {
+    display: flex;
+    gap: 15px;
+}
 
+section {
+    box-sizing: border-box;
+    width: auto;
+    max-width: 400px;
+    border-style: solid;
+    border-color: rgb(199, 198, 198);
+    border-width: 1px;
+    padding: 15px;
+}
+
+section h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    main {
+        flex-wrap: wrap;
+    }
+    section {
+        flex-grow: 1;
+        flex-basis: calc(50% - 15px);
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
-    
+    main {
+        flex-direction: column;
+    }
 }
