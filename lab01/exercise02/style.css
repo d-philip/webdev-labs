@@ -34,6 +34,11 @@ img {
     margin-left: -15px;
 }
 
+video {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}
+
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
     main {
