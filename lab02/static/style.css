@@ -24,9 +24,35 @@ nav ul {
 }
 
 main {
-    margin: 3vh;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkslateblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 3vh auto 3vh auto;
+    width: 80%;
 }
 
+main > h2 {
+    margin-bottom: 0px;
+}
+
+main > h4 {
+    margin-top: 1vh;
+}
+
+img {
+    max-height: 58vh;
+    max-width: 80%;
+    box-shadow: 2px 2px 5px grey;
+}
+
+section {
+    display: flex;
+    gap: 3vh;
+}
 
 @media only screen and (max-width: 1000px) {
     /* Media queries go here */
